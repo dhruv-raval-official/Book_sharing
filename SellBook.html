@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="SellBook.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="title">Sell Book</div>
+        <div class="content">
+            <form action="SellBook.php" method="post" enctype="multipart/form-data">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Book Cover Image
+                            <input type="file" name="coverimg" id="UploadCover" style="display: block;" accept="image/x-png,image/gif,image/jpeg">
+                             </span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Book Name
+                             <input type="text" name="bname" id="">
+                             </span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Book Author
+                             <input type="text" name="bauthor" id="">
+                              </span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Publish Year
+                             <input type="number" min="1900" max="2022" name="byear" id="">
+                             </span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Book Price
+                             <input type="number" name="bprice" id="">
+                        </span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Book Description
+                             <textarea name="bdesc" id="" cols="30" rows="10"></textarea>
+                          </span>
+                    </div>
+
+
+
+                </div>
+
+                <div class="button"><input type="submit" name="Sell" value="Sell">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
